@@ -4,11 +4,11 @@ Initially, this folder will be an upload point for our georeferenced study data 
 
 ## Instructions
 
-To get us started, I'm going to ask that all incoming data be standardized as RDS files of SpatialPolygonsDataFrame objects. RDS files store actual R objects and all of their properties in one clean file. This obviously has advantages over using GIS files like shapefiles that have many actual files associated with one feature class. In order to be able to merge all of our files, we will also need to standardize the fields and coordinate system we use. Since most data is originally collected in WGS84, I'm going to ask that all data in these initial stages be in that system. Let's all start with the following attribute table fields:
+To get us started, I'm going to ask that all incoming data be standardized as RDS files of SpatialPolygonsDataFrame objects. RDS files store actual R objects and all of their properties in one clean file. This obviously has advantages over using GIS files like shapefiles that have many actual files associated with one feature class. In order to be able to merge all of our files, we will also need to standardize the fields and coordinate system we use. Since most data is originally collected in WGS84, I'm going to ask that all data in these initial stages be in that system. Let's all start with the following attribute table fields, we need an ID field for the datatype, so I'm proposing we use our initials, birthday month, plus a number unique to each study:
 
 | StudyName | URL | Description | Contributor | Authors | ID |
 | --------- | --- | ----------- | ----------- | ------- | -- |
-| Biocrust magic | www.blahbla.blah | Biocrust study | Travis Nauman | Some peoples | TWN1 |
+| Biocrust magic | www.blahbla.blah | Biocrust study | Travis Nauman | Some peoples | TWN041 |
 
 ## Examples
 Below are a vignettes with some of the more common scenarios I'd expect folks to run into when getting studies into SpatialPolygons and exporting as an RDS.
