@@ -15,7 +15,7 @@ Below are a vignettes with some of the more common scenarios I'd expect folks to
 
 ### Using a bounding box or polygon coordinates
 
-'''
+```
 ## Import packages
 required.packages <- c("sp", "rgdal")
 new.packages <- required.packages[!(required.packages %in% installed.packages()[,"Package"])]
@@ -52,4 +52,6 @@ plot(polysp.df)
 ## Now save to an RDS file
 saveRDS(polysp.df, "C:/Users/tnauman/Desktop/Nauman.rds") # please title files by your name to keep track of them
 
-'''
+```
+
+
