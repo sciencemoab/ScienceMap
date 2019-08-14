@@ -25,7 +25,7 @@ rm(required.packages, new.packages)
 
 
 ## Get coordinates from a sciencebase bounding box
-# https://www.sciencebase.gov/catalog/item/imap/5aba8a43e4b081f61abb4c8c
+# Example: https://www.sciencebase.gov/catalog/item/imap/5aba8a43e4b081f61abb4c8c
 poly <- c(-111.879476326, 39.426374016, -107.931508792, 39.426374016, -107.931508792, 37.734191073, -111.879476326, 37.734191073)
 ID <- "TWN1"
 name <- "Elevated aeolian sediment transport on the Colorado Plateau, USA: the role of grazing, vehicle disturbance, and increasing aridity"
@@ -53,5 +53,35 @@ plot(polysp.df)
 saveRDS(polysp.df, "C:/Users/tnauman/Desktop/Nauman.rds") # please title files by your name to keep track of them
 
 ```
+The SpatialPolygonsDataFrame() class function also acts as an rbind type function if you want to put multiple polygons with the same set of attributes together. So if you have multiple bounding boxes, this is one way to put them together, although there are other ways to accomplish this.
+```
+newpolys <- SpatialPolygonsDataFrame(1stpoly, 2ndpoly)
+```
 
 
+### Using a pre-editted shapefile
+```
+required.packages <- c("sp", "rgdal", "raster")
+new.packages <- required.packages[!(required.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+lapply(required.packages, require, character.only=T)
+rm(required.packages, new.packages)
+
+## Load file
+setwd("C:/Models_active_work") ## FOlder with file
+shp.polys <-readOGR(".", "study_file") # don't include .shp extention
+
+## Now switch projection if needed
+wgs84.proj <- CRS("+proj=longlat +datum=WGS84")
+shp.polys <- spTransform(shp.polys, wgs84.proj)
+ 
+## Can plot to see if it still looks ok
+plot(shp.polys)
+
+## Now save to an RDS file
+saveRDS(shp.polys, "C:/Users/tnauman/Desktop/Nauman.rds") # please title files by your name to keep track of them
+
+```
+## Upload you file
+
+From inside the [data](https://github.com/sciencemoab/ScienceMap/tree/master/data) folder you can upload your rds file. Just click the "Upload files" button on the upper right of the page just under the settings tab.
