@@ -77,6 +77,13 @@ shp.polys <-readOGR(".", "study_file") # don't include .shp extention
 ## Now switch projection if needed
 wgs84.proj <- CRS("+proj=longlat +datum=WGS84")
 shp.polys <- spTransform(shp.polys, wgs84.proj)
+
+## Unfortunately, shp fieldnames are too short (max of 10 char) for our fields and thus have to be editted
+shp.polys@data$Description <- shp.polys@data$Descriptio
+shp.polys@data$Contributor <- shp.polys@data$Contributo
+# Remove old fields
+shp.polys@data$Descriptio <- NULL
+shp.polys@data$Contributo <- NULL
  
 ## Can plot to see if it still looks ok
 plot(shp.polys)
