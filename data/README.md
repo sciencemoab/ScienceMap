@@ -17,7 +17,7 @@ Below are a vignettes with some of the more common scenarios I'd expect folks to
 
 ```
 ## Import packages
-required.packages <- c("sp", "rgdal")
+required.packages <- c("sp", "rgdal","raster")
 new.packages <- required.packages[!(required.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 lapply(required.packages, require, character.only=T)
