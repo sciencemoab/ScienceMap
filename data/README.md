@@ -52,6 +52,9 @@ plot(polysp.df)
 ## Now save to an RDS file
 saveRDS(polysp.df, "C:/Users/tnauman/Desktop/Nauman.rds") # please title files by your name to keep track of them
 
+## If you want load an existed RDS file into R
+polys.ex <- readRDS("C:/Users/tnauman/Desktop/Nauman.rds")
+
 ```
 The SpatialPolygonsDataFrame() class function also acts as an rbind type function if you want to put multiple polygons with the same set of attributes together. So if you have multiple bounding boxes, this is one way to put them together, although there are other ways to accomplish this.
 ```
@@ -82,6 +85,6 @@ plot(shp.polys)
 saveRDS(shp.polys, "C:/Users/tnauman/Desktop/Nauman.rds") # please title files by your name to keep track of them
 
 ```
-## Upload you file
+## Upload your file
 
 From inside the [data](https://github.com/sciencemoab/ScienceMap/tree/master/data) folder you can upload your rds file. Just click the "Upload files" button on the upper right of the page just under the settings tab.
