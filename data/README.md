@@ -58,7 +58,7 @@ saveRDS(polysp.df, "C:/Users/tnauman/Desktop/Nauman.rds") # please title files b
 polys.ex <- readRDS("C:/Users/tnauman/Desktop/Nauman.rds")
 
 ```
-The SpatialPolygonsDataFrame() class function also acts as an rbind type function if you want to put multiple polygons with the same set of attributes together. So if you have multiple bounding boxes, this is one way to put them together, although there are other ways to accomplish this.
+The SpatialPolygonsDataFrame() class function also acts as an rbind type function if you want to put multiple polygons with the same set of attributes together. So if you have multiple bounding boxes in SpatialPolygonsDataFrame objects, this is one way to put them together, although there are other ways to accomplish this.
 ```
 newpolys <- SpatialPolygonsDataFrame(1stpoly, 2ndpoly)
 ```
