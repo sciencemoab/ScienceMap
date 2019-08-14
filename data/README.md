@@ -11,7 +11,7 @@ To get us started, I'm going to ask that all incoming data be standardized as RD
 | Biocrust magic | www.blahbla.blah | Biocrust study | Travis Nauman | Some peoples | TWN041 |
 
 ## Examples
-Below are a vignettes with some of the more common scenarios I'd expect folks to run into when getting studies into SpatialPolygons and exporting as an RDS.
+Below are a vignettes with some of the more common scenarios I'd expect folks to run into when getting studies into SpatialPolygonsDataFrame objects and exporting as an RDS.
 
 ### Using a bounding box or polygon coordinates
 
