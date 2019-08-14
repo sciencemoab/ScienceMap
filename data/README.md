@@ -27,6 +27,8 @@ rm(required.packages, new.packages)
 ## Get coordinates from a sciencebase bounding box
 # Example: https://www.sciencebase.gov/catalog/item/imap/5aba8a43e4b081f61abb4c8c
 poly <- c(-111.879476326, 39.426374016, -107.931508792, 39.426374016, -107.931508792, 37.734191073, -111.879476326, 37.734191073)
+
+## Now create the attribute fields
 ID <- "TWN1"
 name <- "Elevated aeolian sediment transport on the Colorado Plateau, USA: the role of grazing, vehicle disturbance, and increasing aridity"
 URL <- "https://docs.google.com/a/naumangeospatial.com/viewer?a=v&pid=sites&srcid=bmF1bWFuZ2Vvc3BhdGlhbC5jb218d3d3fGd4OjE0ZmIwYjY2YjhiMjY1MzY"
