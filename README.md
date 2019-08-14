@@ -2,7 +2,9 @@
 ScienceMap is a web based map interface to find science studies and interpretive content for the Upper Colorado River Basin (UCRB). This project is currently just getting started. Please stay tuned! 
 
 ## Data: First Steps
-We are currently gathering formatted data from participants documenting spatial footprints of studies along with links to papers and descriptions. Future steps will include
+We are currently gathering formatted data from participants documenting spatial footprints of studies along with links to papers and descriptions. Future steps will include integrating ingested data into Leaflet map deployed on a Shiny web app
+
+Participants, please go to the [data](https://github.com/sciencemoab/ScienceMap/tree/master/data) folder to upload your studies. Instructions are provided in the README file there.
 
 ## Built With
 * [The R Project for Statistical Computing](http://www.dropwizard.io/1.0.2/docs/) - The coding language environment employed
