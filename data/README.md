@@ -8,8 +8,7 @@ To get us started, I'm going to ask that all incoming data be standardized as RD
 
 | StudyName | URL | Description | Contributor | Authors |
 | --------- | --- | ----------- | ----------- | ------- |
-| Elevated aeolian sediment transport on the Colorado Plateau, USA: the role of grazing, vehicle disturbance, and increasing aridity | https://docs.google.com/a/naumangeospatial.com/viewer?a=v&pid=sites&srcid=bmF1bWFuZ2Vvc3BhdGlhbC5jb218d3d3fGd4OjE0ZmIwYjY2YjhiMjY1MzY | Wind erosion study in Moab area | Travis Nauman | Nauman, Travis W.; Duniway, Michael C.; Webb, Nicholas P.; Belnap, Jayne |
-
+| Biocrust magic | www.blahbla.blah | Biocrust study | Travis Nauman | Some peoples |
 
 ## Examples
 Below are a vignettes with some of the more common scenarios I'd expect folks to run into when getting studies into the 
