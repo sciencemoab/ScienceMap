@@ -9,8 +9,8 @@ runApp('app')
 ```
 
 ## Files
-`app.R` : Defines shiny user interface and 'back end' processing
-`config.R` : sets some initial paths / parameters
-`helpers.R` : plotting and processing functions
-`prepData.R` : for initializing inputs
+`app.R` : Defines shiny user interface and 'back end' processing  
+`config.R` : sets some initial paths / parameters  
+`helpers.R` : plotting and processing functions  
+`prepData.R` : for initializing inputs  
 
