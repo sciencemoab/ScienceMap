@@ -6,7 +6,7 @@ We are currently gathering formatted data from participants documenting spatial 
 
 Participants, please go to the [data](https://github.com/sciencemoab/ScienceMap/tree/master/data) folder to upload your studies. Instructions are provided in the README file there.
 
-Follow this link (https://drive.google.com/open?id=1arfe_YCMm1zAV2jQ50TjZ8ry4OSt8RNJ) to read a draft of the purpose/goals of ScienceMap. Participants, please edit this draft to include your own vision/ideas for the project
+Follow this link (https://drive.google.com/open?id=1eLXot1qlQQwu5U1nBiM81sDBEgkcqdJCqnd8LaTVTcw) to read a draft of the purpose/goals of ScienceMap. Participants, please edit this draft to include your own vision/ideas for the project
 
 ## Built With
 * [The R Project for Statistical Computing](http://www.dropwizard.io/1.0.2/docs/) - The coding language environment employed
